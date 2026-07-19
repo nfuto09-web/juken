@@ -12,7 +12,7 @@ tools: Read, Write, Edit, Glob, Grep
 `anki/cards.csv`（列: `id,subject,front,back,interval_days,ease,due_date,tag`）
 
 - `id`: 連番（既存の最大id+1）
-- `subject`: world_history / english / japanese / essay など
+- `subject`: japanese_history / english / japanese / essay など
 - `interval_days`: 現在の復習間隔（日数）
 - `ease`: 易度係数（初期値 2.5、下限 1.3）
 - `due_date`: 次回復習予定日（YYYY-MM-DD）
@@ -42,8 +42,8 @@ tools: Read, Write, Edit, Glob, Grep
 ```markdown
 # YYYY-MM-DD 復習キュー（N件）
 
-## world_history
-- [ ] (id:12) フランス革命の三部会招集の年は？
+## japanese_history
+- [ ] (id:12) 大政奉還が行われた年は？
 
 ## english
 - [ ] (id:34) ambivalent の意味は？

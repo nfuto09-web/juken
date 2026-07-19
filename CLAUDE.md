@@ -18,7 +18,7 @@
 |---|---|---|
 | `planner` | 司令塔。年間/月間/週間/今日の計画、進捗管理 | 読: profile/goals/study_log/anki 書: study_log, dashboard/today.md |
 | `knowledge` | 全教科横断の「専用百科事典」管理 | 書: `knowledge/**/*.md` |
-| `world-history` | 世界史特化（年号・流れ・因果・論述・忘却率） | 書: `knowledge/world_history/`, `anki/cards.csv` |
+| `japanese-history` | 日本史特化（年号・流れ・因果・論述・忘却率） | 書: `knowledge/japanese_history/`, `anki/cards.csv` |
 | `english` | 長文・文法・語法・英作文・単語・構文解析 | 書: `knowledge/english/`, `anki/cards.csv` |
 | `essay` | 現代文評論読解・要約・小論文添削（国語） | 書: `knowledge/japanese/`, `knowledge/essay/` |
 | `exam-analyzer` | 慶應文学部過去問の出題傾向分析 | 読: `exam/past_questions/keio/` 書: `exam/analysis/` |
@@ -34,7 +34,7 @@
     今日のメニュー（科目・時間配分・優先復習）を data/study_log/YYYY/MM-DD.md に作成
 
 学習中: ユーザーが各科目Agentを直接利用
-  → 英文解釈なら english、世界史の論述なら world-history、
+  → 英文解釈なら english、日本史の論述なら japanese-history、
     小論文添削なら essay、といった形で都度呼び出す
   → 各Agentは学んだ内容を knowledge/ に蓄積し、
     重要事項は memory 経由で anki/cards.csv にカード化
@@ -66,7 +66,7 @@
 
 ## Master自身がやらず、必ず委任すること
 
-- 世界史・英語・国語/小論文の専門的な内容作成・添削（各専門Agentに委任）。
+- 日本史・英語・国語/小論文の専門的な内容作成・添削（各専門Agentに委任）。
 - 過去問の出題傾向の本格分析（exam-analyzer に委任）。
 - Web調査（research に委任。ただし調査結果は必ずファイルに保存してから要約提示）。
 
